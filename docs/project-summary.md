@@ -1,31 +1,48 @@
-# Project Summary
+# Smart Transformer Health Monitoring System
 
-## Smart Transformer Health Monitoring System
+MATLAB/Simulink-based simulation of a three-phase distribution transformer condition-monitoring system.
 
-This project is a MATLAB/Simulink-based simulation of a three-phase distribution transformer monitoring system.
+## Project Overview
 
-## Objective
+This academic project monitors transformer operating conditions using RMS voltage and current measurements. It estimates loading and apparent power, produces a health score, and shows Normal, Warning, or Fault status.
 
-To monitor transformer voltage, current, loading, estimated apparent power, temperature, and vibration indicators, then identify abnormal operating conditions.
+## Key Features
 
-## My Role
+- Three-phase transformer model with source, breaker, load, and V-I measurement.
+- RMS voltage and current monitoring.
+- Loading and apparent-power estimation.
+- Rule-based alarms for overload, overcurrent, overvoltage, undervoltage, open-phase condition, overtemperature, and high vibration.
+- Normal operation, short-circuit, and unbalanced-load test scenarios.
+- Named fault-status displays for clear results.
 
-Primary Simulation Developer.
+## My Contribution
 
-- Built the complete three-phase transformer simulation model.
-- Connected source, transformer, breaker, load, V-I measurement, RMS blocks, and monitoring displays.
-- Implemented and tested rule-based health-monitoring logic.
-- Created fault indicators for overload, overcurrent, overvoltage, undervoltage, open-phase condition, overtemperature, and high vibration.
-- Performed normal-operation, fault, and unbalanced-load simulations.
-- Captured model and result screenshots.
+**Primary Simulation Developer**
 
-## Tools
+I built the complete MATLAB/Simulink simulation, connected the electrical and measurement blocks, integrated the health-monitoring logic, created and tested fault cases, and prepared the simulation result screenshots.
+
+## Tools Used
 
 - MATLAB R2025b
 - Simulink
 - Simscape Electrical
 - Specialized Power Systems
 
-## Limitation
+## Repository Structure
 
-The temperature and vibration signals are simplified demonstration models. This simulation is intended for academic learning and is not a hardware-validated industrial protection system.
+```text
+docs/     Project summary and technical documentation
+images/   Model diagrams and setup screenshots
+results/  Normal and fault-test results
+src/      Simulink model and MATLAB Function code
+reports/  Project report and presentation files
+```
+
+## Important Limitation
+
+Temperature and vibration are simplified demonstration signals. This is an academic simulation prototype, not a hardware-validated industrial protection system.
+
+## Author
+
+Roshan Shahu  
+Electrical Engineering Student | Mumbai, India
