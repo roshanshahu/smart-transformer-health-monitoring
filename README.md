@@ -1,45 +1,32 @@
-# Project Summary
+# Smart Transformer Health Monitoring System
 
-## Smart Transformer Health Monitoring System
+MATLAB/Simulink-based simulation of a three-phase distribution transformer condition-monitoring system.
 
-A MATLAB/Simulink-based academic simulation of a three-phase distribution transformer condition-monitoring system.
+## Overview
 
-## Objective
+This project monitors transformer operating conditions using RMS voltage and current measurements. It calculates loading and estimated apparent power, then uses rule-based logic to indicate Normal, Warning, or Fault status.
 
-To measure electrical operating quantities and identify selected abnormal transformer conditions through rule-based monitoring logic.
+## Features
 
-## System Operation
-
-The model measures three-phase RMS voltage and current at the transformer secondary. These measurements are used to estimate loading and apparent power. A MATLAB Function-based monitor then evaluates operating thresholds and outputs a Health Index, overall system status, and individual fault indicators.
-
-## Conditions Monitored
-
-- Overload
-- Overcurrent
-- Overvoltage
-- Undervoltage
-- Open-phase signature
-- Overtemperature
-- High vibration
-
-## Test Cases
-
-- Normal balanced operation
-- Overload condition
-- High-vibration condition
-- Short-circuit disturbance
-- Unbalanced-load condition
+- Three-phase source, transformer, breaker, load, and V-I measurement model.
+- RMS voltage and current monitoring.
+- Loading and apparent-power estimation.
+- Health Index and overall system-status output.
+- Named fault indicators:
+  - Overload
+  - Overcurrent
+  - Overvoltage
+  - Undervoltage
+  - Open-phase condition
+  - Overtemperature
+  - High vibration
+- Normal-operation, overload, short-circuit, unbalanced-load, temperature, and vibration test scenarios.
 
 ## My Contribution
 
 **Primary Simulation Developer**
 
-- Developed the complete MATLAB/Simulink simulation model.
-- Configured the three-phase source, transformer, breaker, load, and V-I measurement system.
-- Built RMS voltage and current measurement paths.
-- Integrated the rule-based Health Monitor, status logic, and named fault displays.
-- Set up and tested normal, fault, and unbalanced-load scenarios.
-- Captured simulation screenshots and results.
+I developed the complete MATLAB/Simulink model, connected the electrical and measurement blocks, integrated the health-monitoring logic, configured test cases, and prepared the simulation results and screenshots.
 
 ## Tools Used
 
@@ -48,6 +35,33 @@ The model measures three-phase RMS voltage and current at the transformer second
 - Simscape Electrical
 - Specialized Power Systems
 
-## Limitation
+## Repository Structure
 
-Temperature and vibration channels are simplified demonstration models rather than physical sensor measurements. The system is an academic simulation prototype and is not a hardware-validated industrial protection device.
+```text
+docs/     Project summary and documentation
+images/   Model diagrams and setup screenshots
+results/  Normal-operation and fault-test screenshots
+src/      Simulink model and MATLAB Function code
+reports/  Final report and presentation files
+```
+
+## Key Result
+
+Under normal balanced operation, the model produced approximately:
+
+| Quantity | Result |
+|---|---:|
+| Phase RMS voltage | 129.6 V |
+| Phase RMS current | 12.24 A |
+| Current loading | 97.5% |
+| Estimated apparent power | 4.76 kVA |
+| System status | Normal |
+
+## Important Limitation
+
+Temperature and vibration are simplified simulation signals for demonstration. This is an academic simulation prototype; it is not a hardware-validated industrial transformer-protection system.
+
+## Author
+
+**Roshan Shahu**  
+Electrical Engineering Student | Mumbai, India
